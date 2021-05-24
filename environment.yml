@@ -1,0 +1,13 @@
+name: lazyblorg
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pyyaml
+  - python=3.8
+  - pip
+  - pip:
+      - orgformat>=2019.11.6.1
+      - opencv-python
+      - werkzeug>=1.0.1
+      - pypandoc
