@@ -23,7 +23,7 @@ BLOG_NAME = 'computational.life'
 DOMAIN = 'computational.life'
 BASE_URL = '//' + DOMAIN
 CSS_URL = BASE_URL + '/computational_life.css'
-BLOG_LOGO = BASE_URL + '/images/public-voit_logo.svg'
+BLOG_LOGO = BASE_URL + '/images/computational_life_logo.svg'
 DISQUS_NAME = 'computational-life'  # gets placed in: '//publicvoit.disqus.com/embed.js'
 
 ## string: Email address to send comments to:
@@ -85,7 +85,7 @@ CUSTOMIZED_IMAGE_LINK_KEY = 'tsfile'  # short for "time-stamp filename"
 ## on blog data generation time.
 ## EMPTY string or non-existing path to a folder if image cache is disabled.
 IMAGE_CACHE_DIRECTORY = os.path.join(
-    os.path.expanduser("~"), *"src/lazyblorg/testdata/imagecache".split('/'))
+    os.path.expanduser("~"), *"git/kephale/lazyblorg/imagecache".split('/'))
 
 ## string: path to the Memacs index for filenametimestamps
 ## Note that the method below is the safe one that works on Windows
@@ -94,21 +94,13 @@ IMAGE_CACHE_DIRECTORY = os.path.join(
 ## EMPTY string if including images via Memacs index is disabled
 ## Please do read the documentation: https://github.com/novoid/lazyblorg/wiki/Orgmode-Elements#images
 MEMACS_FILE_WITH_IMAGE_FILE_INDEX = os.path.join(os.path.expanduser("~"),
-                                                 "org", "memacs",
-                                                 "files.org_archive")
+                                                 "org", "memacs.org_archive")
 
 ## string: path to a directory that holds image files (+ sub-directories)
 ## EMPTY string if including images via traversing the file system is disabled
 ## Please do read the documentation: https://github.com/novoid/lazyblorg/wiki/Orgmode-Elements#images
 DIRECTORIES_WITH_IMAGE_ORIGINALS = [
-    "testdata/testimages",
-    os.path.join(os.path.expanduser("~"), *"tmp/digicam/tmp".split('/')),
-    os.path.join(os.path.expanduser("~"), *"tmp/digicam/oneplus5".split('/')),
-    os.path.join(os.path.expanduser("~"),
-                 *"archive/events_memories/2021".split('/')),
-    os.path.join(os.path.expanduser("~"), *"fun/netfun".split('/')),
-    os.path.join(os.path.expanduser("~"),
-                 *"archive/fromweb/cliparts".split('/'))
+    os.path.join(os.path.expanduser("~"), "blog_images")
 ]
 
 ## string: a filetags-tag - see
