@@ -22,7 +22,7 @@ BLOG_NAME = 'computational.life'
 ## strings: Define your URLs and your name below:
 DOMAIN = 'computational.life'
 BASE_URL = '//' + DOMAIN
-CSS_URL = BASE_URL + '/public_voit.css'
+CSS_URL = BASE_URL + '/computational_life.css'
 BLOG_LOGO = BASE_URL + '/images/public-voit_logo.svg'
 DISQUS_NAME = 'computational-life'  # gets placed in: '//publicvoit.disqus.com/embed.js'
 
@@ -49,7 +49,8 @@ ID_OF_ABOUT_PAGE = '2021-05-24-about'
 
 ## string: This is the Org-mode property :ID: of your blog article which
 ##         is used for the "How to use this blog efficiently" page of your blog.
-ID_OF_HOWTO_PAGE = '2021-05-24-how-to-use-computational-life'
+#ID_OF_HOWTO_PAGE = '2021-05-24-how-to-use-computational-life'
+ID_OF_HOWTO_PAGE = '2021-05-24-about'
 
 ## string: Your Twitter handle/username which is used in the HTML header
 ##         metadata (without the @ character)
